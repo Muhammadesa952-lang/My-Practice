@@ -1,0 +1,17 @@
+div{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border: 2px solid yellow;
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+div:hover{
+    background-color: brown;
+    color: azure;
+}
+div:active{
+    background-color: pink;
+    color: black;
+}
