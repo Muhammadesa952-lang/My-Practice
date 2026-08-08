@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flashcard Deck Challenge</title>
+  <link rel="stylesheet" href="8.css">
+</head>
+<body>
+
+  <div class="deck-container">
+    <header class="deck-header">
+      <h1>Web Dev Flashcards</h1>
+      <p>Click any card to flip it over!</p>
+    </header>
+
+    <input type="radio" name="card-nav" id="card1-select" checked>
+    <input type="radio" name="card-nav" id="card2-select">
+    <input type="radio" name="card-nav" id="card3-select">
+
+    <nav class="card-tabs">
+      <label for="card1-select" class="tab-label">Card 1</label>
+      <label for="card2-select" class="tab-label">Card 2</label>
+      <label for="card3-select" class="tab-label">Card 3</label>
+    </nav>
+
+    <main class="cards-viewport">
+
+      <article class="card-item card-1">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <span class="badge">CSS</span>
+            <h2>What is Flexbox?</h2>
+            <p class="hint">Tap to reveal answer</p>
+          </div>
+          <div class="card-face card-back">
+            <h3>Flexible Box Layout</h3>
+            <p>A 1D layout model designed to distribute space along a single axis (row or column) efficiently.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card-item card-2">
+        <div class="card-inner">
+          <div class="card-face card-front">
+            <span class="badge">HTML</span>
+            <h2>What is Semantic HTML?</h2>
+            <p class="hint">Tap to reveal answer</p>
+          </div>
+          <div class="card-face card-back">
+            <h3>Meaningful Tags</h3>
+            <p>Using elements like <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;header&gt;</code> to convey meaning to screen readers and browsers.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card-item card-3">
+        <div class="card-inner">
+          <div class="card-face card-back-alt card-front">
+            <span class="badge">CSS</span>
+            <h2>What does 'z-index' do?</h2>
+            <p class="hint">Tap to reveal answer</p>
+          </div>
+          <div class="card-face card-back">
+            <h3>Stacking Order</h3>
+            <p>Controls the vertical stacking order of overlapping elements along the z-axis (depth).</p>
+          </div>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+</body>
+</html>
