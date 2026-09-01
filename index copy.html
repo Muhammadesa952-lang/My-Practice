@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Esa- Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="top">
+    <!-- ===================== HEADER / TOP BAR ===================== -->
+    <header class="top-bar">
+      <div class="profile-name">Muhammad Esa</div>
+
+      <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#projects">Project Details</a>
+        <a href="#skills">Skills</a>
+        <a href="#recommendations">Recommendations</a>
+      </nav>
+
+      <a href="#top" class="home-icon" title="Back to top">🏠</a>
+    </header>
+
+    <!-- ===================== ABOUT ME ===================== -->
+    <section id="about" class="section about-section">
+      <img src="pic.png" alt="pic.png" class="profile-photo" />
+      <h1>Muhammad Esa</h1>
+      <p class="summary">
+        I'm a front-end web developer based in Peshawar, Pakistan, with a
+        passion for building clean, accessible, and user-friendly websites. I
+        enjoy turning ideas into interactive experiences using HTML, CSS, and
+        JavaScript, and I'm always looking to learn new tools and frameworks
+        that help me build better products.
+      </p>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section skills-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Sample/default skills -->
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+            alt="HTML5 logo"
+          />
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+            alt="CSS3 logo"
+          />
+          <span>CSS3</span>
+        </div>
+
+        <!-- New skills (3 added, distinct from defaults) -->
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+            alt="JavaScript logo"
+          />
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png"
+            alt="Git logo"
+          />
+          <span>Git &amp; GitHub</span>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732204.png"
+            alt="React logo"
+          />
+          <span>React</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section projects-section">
+      <h2>Project Details</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>
+            A responsive web app that fetches live weather data from a public
+            API and displays current conditions and a 5-day forecast for any
+            city the user searches.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Recipe Finder</h3>
+          <p>
+            A JavaScript application that lets users search for recipes by
+            ingredient, view preparation steps, and save favorites to local
+            storage for quick access later.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Expense Tracker</h3>
+          <p>
+            A personal finance tool built with HTML, CSS, and JavaScript that
+            lets users log income and expenses, categorize transactions, and
+            view a running balance in real time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RECOMMENDATIONS ===================== -->
+    <section id="recommendations" class="section recommendations-section">
+      <h2>Recommendations</h2>
+
+      <ul id="recommendationList" class="recommendation-list">
+        <li class="recommendation-card">
+          <p class="rec-text">
+            "Muhammad Esa is a dedicated developer who consistently delivers
+            clean, well-tested code on time."
+          </p>
+          <p class="rec-author">— Bilal Ahmed, Team Lead</p>
+        </li>
+        <li class="recommendation-card">
+          <p class="rec-text">
+            "Working with Muhammad Esa was a pleasure. He communicates clearly
+            and solves problems creatively."
+          </p>
+          <p class="rec-author">— Sara Malik, Project Manager</p>
+        </li>
+        <li class="recommendation-card">
+          <p class="rec-text">
+            "Muhammad Esa has a strong eye for detail and a genuine passion for
+            front-end development."
+          </p>
+          <p class="rec-author">— Usman Tariq, Senior Developer</p>
+        </li>
+      </ul>
+
+      <!-- Form to add a new recommendation -->
+      <form id="recommendationForm" class="recommendation-form">
+        <h3>Add a Recommendation</h3>
+        <input type="text" id="recAuthor" placeholder="Your name" required />
+        <textarea
+          id="recText"
+          placeholder="Write your recommendation..."
+          required
+        ></textarea>
+        <button type="submit">Submit Recommendation</button>
+      </form>
+
+      <!-- Popup shown only after a new recommendation is submitted -->
+      <div id="popup" class="popup hidden">
+        ✅ Thank you! Your recommendation has been added.
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
