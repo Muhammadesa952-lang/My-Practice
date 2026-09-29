@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic HTML Structure</title>
+  </head>
+  <body>
+    <header>
+      <h1>My First Web Page</h1>
+      <nav>
+        <a href="#about">About</a> | <a href="#hobbies">Hobbies</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          This page shows the core HTML building blocks: headings, paragraphs,
+          links, lists, a table, and a form.
+        </p>
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Reading</li>
+          <li>Coding</li>
+          <li>Cricket</li>
+        </ul>
+        <h3>Weekly schedule</h3>
+        <table border="1" cellpadding="6">
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>Study</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Practice</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <label>Name: <input type="text" name="name" /></label><br /><br />
+          <label>Message:<br /><textarea rows="4" cols="30"></textarea></label
+          ><br /><br />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer><p>Made while learning HTML.</p></footer>
+  </body>
+</html>
