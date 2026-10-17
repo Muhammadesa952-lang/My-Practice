@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #11161d;
+    --color-surface: #1a212b;
+    --color-text: #e8ecf1;
+    --color-text-muted: #9aa5b4;
+    --color-border: #2c3643;
+    --color-accent: #2dd4bf;
+    --color-accent-hover: #5eead4;
+    --color-accent-contrast: #0b1512;
+    --color-danger: #675554;
+    --color-success: #4ade80;
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
+  }
+}
