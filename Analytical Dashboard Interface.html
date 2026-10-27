@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <aside class="sidebar">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <span>OmniDash</span>
+        </div>
+        <nav class="side-nav">
+          <ul>
+            <li class="active"><a href="#">Overview</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Campaigns</a></li>
+            <li><a href="#">Audience</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+        <div class="user-profile">
+          <div class="avatar">ME</div>
+          <div class="user-info">
+            <p class="name">Muhammad Esa</p>
+            <p class="role">Admin</p>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="dashboard-header">
+          <div class="search-bar">
+            <input type="text" placeholder="Search metrics, reports..." />
+          </div>
+          <div class="header-actions">
+            <button class="icon-btn">🔔</button>
+            <button class="btn-primary">+ New Report</button>
+          </div>
+        </header>
+
+        <div class="content-body">
+          <div class="page-title">
+            <h1>Performance Overview</h1>
+            <span class="date-picker">Last 30 Days</span>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-title">Total Revenue</span>
+              <div class="stat-value">$124,500</div>
+              <span class="trend positive">+14.2% vs last month</span>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-title">Active Users</span>
+              <div class="stat-value">45,210</div>
+              <span class="trend positive">+8.4% vs last month</span>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-title">Conversion Rate</span>
+              <div class="stat-value">3.24%</div>
+              <span class="trend negative">-0.6% vs last month</span>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-title">Avg. Session</span>
+              <div class="stat-value">4m 12s</div>
+              <span class="trend positive">+2.1% vs last month</span>
+            </div>
+          </div>
+
+          <div class="dashboard-layout">
+            <div class="panel main-panel">
+              <div class="panel-header">
+                <h2>Traffic Trends</h2>
+                <div class="panel-controls">
+                  <button class="chip active">Weekly</button>
+                  <button class="chip">Monthly</button>
+                </div>
+              </div>
+              <div class="chart-placeholder">
+                <div class="bar-chart">
+                  <div class="bar" style="--height: 40%"></div>
+                  <div class="bar" style="--height: 65%"></div>
+                  <div class="bar" style="--height: 50%"></div>
+                  <div class="bar" style="--height: 85%"></div>
+                  <div class="bar" style="--height: 70%"></div>
+                  <div class="bar" style="--height: 95%"></div>
+                  <div class="bar" style="--height: 60%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel side-panel">
+              <div class="panel-header">
+                <h2>Traffic Sources</h2>
+              </div>
+              <ul class="source-list">
+                <li>
+                  <span class="source-name">Organic Search</span>
+                  <span class="source-val">42%</span>
+                </li>
+                <li>
+                  <span class="source-name">Direct Referral</span>
+                  <span class="source-val">28%</span>
+                </li>
+                <li>
+                  <span class="source-name">Social Media</span>
+                  <span class="source-val">18%</span>
+                </li>
+                <li>
+                  <span class="source-name">Email Campaigns</span>
+                  <span class="source-val">12%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel full-panel">
+            <div class="panel-header">
+              <h2>Recent Transactions</h2>
+            </div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Transaction ID</th>
+                  <th>User</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#TX-9012</td>
+                  <td>Muhammad Musa</td>
+                  <td>Oct 24, 2026</td>
+                  <td>$240.00</td>
+                  <td><span class="status-tag success">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>#TX-9013</td>
+                  <td>Faizan Khan</td>
+                  <td>Oct 24, 2026</td>
+                  <td>$120.00</td>
+                  <td><span class="status-tag pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>#TX-9014</td>
+                  <td>Nouman Ali</td>
+                  <td>Oct 23, 2026</td>
+                  <td>$85.00</td>
+                  <td><span class="status-tag success">Completed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
